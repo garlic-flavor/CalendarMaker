@@ -8,11 +8,11 @@
     <body>
         <script type="importmap">
             { "imports": {
-                "pdfjs-dist": "./node_modules/pdfjs-dist/build/pdf.mjs"
+                "pdfjs-dist": "./lib/pdf.mjs"
             }}
         </script>
         <script>
-            const pdfjslibWorkerSrc = './node_modules/pdfjs-dist/build/pdf.worker.mjs';
+            const pdfjslibWorkerSrc = './lib/pdf.worker.mjs';
         </script>
         <script crossorigin type="module" src="./script/main.js"></script>
         <input type="file" id="target-file" /><br>
