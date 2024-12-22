@@ -6,15 +6,13 @@
         <title>カレンダーデータ作成</title>
     </head>
     <body>
-    <!-- //"pdfjs-dist": "./node_modules/pdfjs-dist/build/pdf.mjs" -->
         <script type="importmap">
             { "imports": {
-                "pdfjs-dist": "https://mozilla.github.io/pdf.js/build/pdf.mjs"
+                "pdfjs-dist": "./node_modules/pdfjs-dist/build/pdf.mjs"
             }}
         </script>
         <script>
-            const pdfjslibWorkerSrc = 'https://mozilla.github.io/pdf.mjs/build/pdf.worker.mjs';
-            //const pdfjslibWorkerSrc = './node_modules/pdfjs-dist/build/pdf.worker.mjs';
+            const pdfjslibWorkerSrc = './node_modules/pdfjs-dist/build/pdf.worker.mjs';
         </script>
         <script crossorigin type="module" src="./script/main.js"></script>
         <input type="file" id="target-file" /><br>
