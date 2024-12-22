@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="./stylesheet/main.css" />
+        <title>カレンダーデータ作成</title>
+    </head>
+    <body>
+        <script type="importmap">
+            { "imports": {
+                //"pdfjs-dist": "./node_modules/pdfjs-dist/build/pdf.mjs"
+                "pdfjs-dist": "http://mozilla.github.io/pdf.js/build/pdf.mjs"
+            }}
+        </script>
+        <script>
+            const pdfjslibWorkerSrc = 'https://mozilla.github.io/pdf.mjs/build/pdf.worker.mjs';
+            //const pdfjslibWorkerSrc = './node_modules/pdfjs-dist/build/pdf.worker.mjs';
+        </script>
+        <script crossorigin type="module" src="./script/main.js"></script>
+        <input type="file" id="target-file" /><br>
+        <div id="targetMonth"></div><br>
+        <select id="members"></select><input type="button" id="doDownload" value="ダウンロード" disabled />
+    </body>
+</html>

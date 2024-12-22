@@ -1,0 +1,27 @@
+body {
+    margin-top: 200px;
+    text-align: center;
+}
+
+#target-file {
+    font-size: 20pt;
+    width: 300pt;
+}
+
+#members {
+    font-size: 24pt;
+    width: 150pt;
+    height: 60pt;
+}
+
+#doDownload {
+    font-size: 24pt;
+}
+
+#targetMonth {
+    height: 100px;
+}
+
+#members + #doDownload {
+    margin-left: 30pt;
+}
